@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术支持 - OncoCare</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1, h2 {
+            color: #536DFE;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-top: 20px;
+            color: #536DFE;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+        .faq-item h3 {
+            color: #3D5AFE;
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <a href="#" onclick="toggleLanguage(event)">English / 中文</a>
+        </div>
+
+        <div class="zh">
+            <h1>技术支持</h1>
+            
+            <h2>常见问题</h2>
+            
+            <div class="faq-item">
+                <h3>如何添加新的健康检测指标？</h3>
+                <p>1. 在"检测指标 & 治疗方案管理"页面点击"新增指标"按钮</p>
+                <p>2. 填写指标名称、单位、参考范围等信息，点击保存</p>
+                <p>3. 新增的指标会显示在相应分类下</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>如何编辑或删除已有指标？</h3>
+                <p>1. 在指标列表中点击右侧的"编辑"图标</p>
+                <p>2. 修改指标信息后保存，或选择删除</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>我的健康数据会被上传吗？</h3>
+                <p>不会。所有健康数据仅存储在您的设备本地，完全由您个人控制。</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>如何备份和恢复数据？</h3>
+                <p>1. 在"数据导出/同步"页面可以导出全部健康数据</p>
+                <p>2. 支持本地备份和iCloud同步（如已开通）</p>
+                <p>3. 恢复时选择导入备份文件即可</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>如何管理我的健康档案？</h3>
+                <p>1. 在"个人中心"页面可以编辑个人信息、身高体重等健康档案</p>
+                <p>2. 所有信息仅存储在本地，安全可靠</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>如何获取最新的指标体系？</h3>
+                <p>1. 在"检测指标 & 治疗方案管理"页面点击"检查指标更新"按钮</p>
+                <p>2. 如有新版本，系统会自动提示并支持一键更新</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>联系我们</h2>
+                <p>如遇到其他问题或需要帮助，请通过以下方式联系我们：</p>
+                <p>邮箱：oncocare-support@guoxueqiusuo.site</p>
+                <p>我们会在24小时内回复您的问题。</p>
+            </div>
+        </div>
+
+        <div class="en" style="display: none;">
+            <h1>Technical Support</h1>
+            
+            <h2>FAQ</h2>
+            
+            <div class="faq-item">
+                <h3>How to add a new health indicator?</h3>
+                <p>1. On the "Indicator & Treatment Management" page, tap the "Add Indicator" button</p>
+                <p>2. Fill in the indicator name, unit, reference range, and save</p>
+                <p>3. The new indicator will appear under the corresponding category</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How to edit or delete an existing indicator?</h3>
+                <p>1. Tap the "Edit" icon on the right side of the indicator list</p>
+                <p>2. Modify the indicator information and save, or choose to delete</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Will my health data be uploaded?</h3>
+                <p>No. All health data is stored only on your device and is fully under your control.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How to backup and restore data?</h3>
+                <p>1. On the "Data Export/Sync" page, you can export all health data</p>
+                <p>2. Supports local backup and iCloud sync (if enabled)</p>
+                <p>3. To restore, simply import the backup file</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How to manage my health profile?</h3>
+                <p>1. On the "Profile" page, you can edit personal info, height, weight, etc.</p>
+                <p>2. All information is stored locally and is secure</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How to get the latest indicator system?</h3>
+                <p>1. On the "Indicator & Treatment Management" page, tap the "Check Indicator Update" button</p>
+                <p>2. If a new version is available, the system will prompt and support one-click update</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Contact Us</h2>
+                <p>If you encounter other issues or need help, please contact us:</p>
+                <p>Email: oncocare-support@guoxueqiusuo.site</p>
+                <p>We will respond to your questions within 24 hours.</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="back-link zh">返回主页</a>
+        <a href="index.html" class="back-link en" style="display: none;">Back to Home</a>
+    </div>
+
+    <script>
+        function toggleLanguage(event) {
+            event.preventDefault();
+            const zhElements = document.querySelectorAll('.zh');
+            const enElements = document.querySelectorAll('.en');
+            
+            zhElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+            
+            enElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html> 

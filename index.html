@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OncoCare 支持中心</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+        }
+        h1 {
+            color: #536DFE;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .language-switch {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+        .link-list {
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            align-items: center;
+        }
+        .link-item {
+            display: block;
+            padding: 18px 36px;
+            background: #f5f7fa;
+            border-radius: 8px;
+            color: #3D5AFE;
+            font-size: 1.2em;
+            text-decoration: none;
+            box-shadow: 0 2px 8px rgba(83,109,254,0.06);
+            transition: background 0.2s;
+        }
+        .link-item:hover {
+            background: #e8eaf6;
+        }
+        .desc {
+            text-align: center;
+            color: #666;
+            margin-bottom: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-switch">
+            <a href="#" onclick="toggleLanguage(event)">English / 中文</a>
+        </div>
+        <div class="zh">
+            <h1>OncoCare 支持中心</h1>
+            <div class="desc">欢迎使用 OncoCare！如需了解隐私政策或获取技术支持，请点击下方入口。</div>
+            <div class="link-list">
+                <a class="link-item" href="privacy.html">隐私政策</a>
+                <a class="link-item" href="support.html">技术支持</a>
+            </div>
+        </div>
+        <div class="en" style="display: none;">
+            <h1>OncoCare Support Center</h1>
+            <div class="desc">Welcome to OncoCare! For privacy policy or technical support, please use the links below.</div>
+            <div class="link-list">
+                <a class="link-item" href="privacy.html">Privacy Policy</a>
+                <a class="link-item" href="support.html">Technical Support</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function toggleLanguage(event) {
+            event.preventDefault();
+            const zhElements = document.querySelectorAll('.zh');
+            const enElements = document.querySelectorAll('.en');
+            zhElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+            enElements.forEach(el => {
+                el.style.display = el.style.display === 'none' ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+</html> 
